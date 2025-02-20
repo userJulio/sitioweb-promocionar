@@ -1,0 +1,1038 @@
+
+*{
+    padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:root{
+    --bgcolor-header: #10273F;
+    --bgcolor-letter: #EE0400;
+    --bgcolor-title: #fff;
+    --bgcolor-border: #E92728;
+    --bgcolor-background:#424242;
+}
+
+.container-main{
+    background: rgb(59, 12, 12);
+    background: linear-gradient(90deg, rgba(59, 12, 12, 1) 0%, rgba(167, 12, 12, 1) 38%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+header.menu-header{
+    width: 100%;
+    height: 80px;
+    background-color: #101F3F;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-blog{
+    margin: 0px auto;
+    width: 95%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+.content-info-grafics-card {
+    margin: 0px auto;
+    width: 80%;
+    margin-top: 10px;
+}
+h2.tarjeta-title {
+    color: #E07E10;
+    font-weight: bold;
+    text-align: center;
+}
+img.img-juegos-video {
+    cursor: pointer;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+p.parrafo-cards-tarjeta {
+    text-align: justify;
+}
+p.parrafo-intelcore {
+    text-align: justify;
+}
+p.parrafo-amd {
+  text-align: justify;
+}
+p.parrafo-tarjeta-grafics {
+    color: #fff;
+    text-align: justify;
+    font-size: 18px;
+}
+.logo-computer {
+    width: 100%;
+    background: #101F3F;
+    height: 67px;
+}
+h1.title-page{
+     font-weight: bold;
+     text-align: center;
+     color:#E07E10;   
+}
+.content-playstation-diferencias {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+.content-image-playstation {
+    display: flex;
+    justify-content: center;
+}
+.playstation4,.playstation5{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 8px;
+    gap: 15px;
+   
+}
+h1.title-ps {
+    color: #E7E9F1;
+    font-weight: bold;
+    text-align: center;
+}
+.content-title-playstation5 >h2,.content-title-playstation4 >h2{
+    color: #fff;
+}
+p.parrafo-playstation5, p.parrafo-playstation4{
+    color:#fff;
+    font-size: 18px;
+}
+.content-spinner-carga{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(22,61,151);
+    background: radial-gradient(circle, rgba(22,61,151,1) 26%, rgba(5,7,45,1) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    gap: 20px;
+    z-index: 10;
+}
+.contetn-spinner-remover{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-poput-video{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    /* transition: opacity 0.3s ease; */
+    gap: 20px;
+    z-index: 12;
+}
+.content-poput-video.active{
+    visibility: visible;
+    opacity: 1;
+}
+img.img-logo{
+    width: 70px;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.poput-video{
+    width: 90%;
+    height: 80vh;
+    /* background-color: #ffff; */
+    border-radius: 10px;
+}
+iframe.video-frame{
+    width: 101%;
+    height: 100%;
+}
+
+img.img-playstation {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: inherit;
+}
+.content-description-page {
+    margin: 0px auto;
+    width: 95%;
+}
+p.description-page {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content-cards-ps5 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+.content-title-tipops5 >h2{
+    color: #E07E10;
+}
+.content-card-juego {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 15px;
+    gap: 15px;
+}
+h2.title-play {
+    text-align: left;
+    font-weight: bold;
+}
+.separacion-content{
+    color: #fff;
+}
+.content-juego-ps5 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+p.text-description-play-ps5 {
+    font-size: 18px;
+    text-align: justify;
+}
+.content-cards-tarjetas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.cards-tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: rgb(20,58,70);
+background: linear-gradient(90deg, rgba(20,58,70,1) 25%, rgba(24,84,103,1) 78%);
+justify-content: space-between;
+}
+.cards-tarjeta:hover{
+    border: 2px solid #fff;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+}
+.content-title-catalog >h2{
+    text-align: center;
+    color: #E07E10;
+    font-weight: bold;
+}
+img.bannercss{
+    object-fit: inherit;
+    height: 800px;
+    width: 100%;
+}
+
+.content-descrption-cards {
+    min-height: 136px;
+}
+p.parrafo-procesador {
+    color: #fff;
+    text-align: justify;
+    font-size: 18px;
+}
+.content-tipo-procesador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+.content-processor-intel {
+    display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 15px;  
+        border-radius: 10px;
+        padding: 15px 15px;
+        background: rgb(53,59,136);
+background: linear-gradient(90deg, rgba(53,59,136,1) 26%, rgba(5,7,45,1) 81%);
+}
+.content-processor-amd {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background: rgb(73,18,18);
+background: linear-gradient(90deg, rgba(73,18,18,1) 26%, rgba(224,69,5,1) 81%);
+}
+.content-info-parrafo {
+    margin: 0px auto;
+    width: 95%;
+}
+.content-parrafo-procesador{
+    margin: 0px auto;
+    width: 95%;
+}
+nav ul >li.active {
+ background-color: #BB1821;
+ border-radius: 5px;
+}
+.content-processor-intel:hover{
+    border: 2px solid #fff;
+}
+.content-processor-amd:hover{
+    border: 2px solid #fff;
+}
+
+.content-imagen-intel {
+    display: flex;
+    justify-content: center;
+}
+img.img-procesador {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content-intel-card {
+    color: #fff;
+}
+.content-amd-card {
+    color: #fff;
+}
+.content-title-intelcore > h3{
+    font-weight: bold;
+}
+.content-title-amd >h3{
+    font-weight: bold;
+}
+.content-imagen-amd {
+    display: flex;
+    justify-content: center;
+}
+
+h3.title-card-tarjeta {
+    font-weight: bold;
+}
+
+h1.title-marca {
+    background-color: var(--bgcolor-header);
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    /* text-shadow: 6px -1px 0px var(--bgcolor-letter); */
+    margin-bottom: 0px;
+    margin-top: 10px;
+    position: relative;
+    top: -7px;
+}
+h1.title-marca-menu{
+    color: #fff;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.logo-marca {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+img.audifonosgamer {
+    width: 66px;
+    height: 55px;
+}
+footer.footer{
+    background-color: var(--bgcolor-header);
+    color:#fff;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filtros-avanzados {
+    background: #143A46;
+    padding: 10px;
+    width: 17%;
+    display: none;
+    color: #fff;
+}
+.catalogo-products {
+    padding: 10px;
+    width: 100%;
+}
+.mostrar-content{
+    display: inline-block;
+    transition: display 2s ease;
+    scale: 1;
+}
+.ocultar-content{
+    display: none;
+    transition: display 2s ease;
+    scale: 1;
+}
+
+
+.rowflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+h6.title-product {
+
+    text-align: center;
+    font-weight: bold;
+}
+.content-image-catalog {
+    width: 100%;
+    height: 285px;
+}
+.product-catalog{
+    background-color: #1D4E6D;
+    width: 350px;
+    min-height: 411px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-bottom: 11px;
+    color: #fff;
+    -webkit-box-shadow: 12px 18px 20px 0px rgba(102,71,71,1);
+-moz-box-shadow: 12px 18px 20px 0px rgba(102,71,71,1);
+box-shadow: 12px 18px 20px 0px rgba(102,71,71,1);
+}
+.feature-title {
+    font-weight: bold;
+}
+
+.content-price-title {
+    padding-left: 10px;
+}
+h6.title-price {
+    font-size: 18px;
+    color: #E07E10 !important;
+    float: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+strong.feacture-xbox {
+    color: #E07E10;
+    font-size: 19px;
+}
+.content-title-catalog {
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content-description-catalog {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 34px;
+    height: 109px;
+
+}
+a.btn.btn-danger {
+    /* padding-left: 10px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 92%;
+    background-color: #A00C1A;
+    font-weight: bold;
+    border-radius: 999px;
+}
+p.description {
+    line-height: 18px;
+    text-align: justify;
+}
+.content-products {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.col-12.content-buscador {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.content-logo-header{
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+.content-border-ps4, .content-border-ps5 {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(22,61,151);
+    background: linear-gradient(90deg, rgba(22,61,151,1) 26%, rgba(5,7,45,1) 81%);
+    padding: 7px;
+    border-radius: 8px;
+}
+a.enlace-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	z-index:1000;
+	margin:0px auto;
+}
+
+header nav ul {
+	list-style:none;
+    padding: 0px;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul >li:hover {
+	background-color:#BB1821;
+    border-radius: 5px;
+
+}
+
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 15px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+.logo-image {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+img.img-catalog{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.pagination ul{
+    width: 100%;
+    display: flex;
+    background: #fff;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .pagination ul li{
+    color: #000;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  .pagination ul li.numb{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+  }
+  .pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+  }
+  .pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+  }
+  .pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+  }
+  .pagination ul li.btn{
+    padding: 0 20px;
+    border-radius: 50px;
+  }
+  .pagination li.active,
+  .pagination ul li.numb:hover,
+  .pagination ul li:first-child:hover,
+  .pagination ul li:last-child:hover{
+    color: #fff;
+    background-color: #C80607;
+  }
+
+  .content-pagination-products {
+    display: flex;
+    justify-content: center;
+}
+#button-advanced-filter{
+    background-color: #BB1821;
+    border: 1px solid #BB1821;
+}
+.content-title-filter {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 41px;
+    border-bottom: 1px solid #534949;
+    cursor: pointer;
+}
+.button.btn.btn-success.boton-filtro{
+    width: 100%;
+}
+.row-features-pc {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+button.btn-success.boton-filtrar{
+    width: 100%;
+}
+.content-rango-precio {
+    display: flex;
+    justify-content: center;
+}
+label.rango-price {
+    font-weight: bold;
+    font-size: 14px;
+}
+.content-value-price {
+    display: flex;
+    justify-content: flex-end;
+}
+label.price-value {
+    font-weight: bold;
+    color: red;
+    font-size: 15px;
+}
+span.accordion-open {
+    font-size: 18px;
+}
+.content-options-filter{
+    margin-top: 10px;
+    display: none;
+}
+input#search-option-marca{
+    height: 30px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px;
+}
+.content-check-options {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-button-filter{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media (min-width:1200px) and (max-width:1500px){
+
+    img#banners-img{
+        height: 800px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    img#banners-img{
+        height: 640px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:992px){
+    img#banners-img{
+        height: 480px;
+    }
+    #content-juegosps5{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px){
+    #logo-computer{
+        display: none;
+      }
+
+      body {
+		padding-top:80px;
+	}
+    img#banners-img{
+        height: 380px;
+    }
+    header#menu-header{
+        height: 0px;
+    }
+    #content-tipo-procesador{
+        display: flex;
+        flex-direction: column;
+    }
+    #content-border-ps5,#content-border-ps4{
+        width: 100%;
+    }
+    #content-processor-amd,#content-processor-intel{
+        width: 100%;
+    }
+    #content-playstation-diferencias{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ps5-content, #ps4-content{
+        width: 100%;
+    }
+    #content-juegosps5{
+        display: flex;
+        flex-direction: column;
+    }
+    #poput-video{
+        height: 55vh;
+    }
+    .menu_bar {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #101F3F;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        }
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+  
+	.menu_bar span {
+        float: right;
+        color: #fff;
+        font-size: 40px;
+        margin-right: 15px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+        background: rgb(16,39,63);
+        background: radial-gradient(circle, rgba(16,39,63,1) 25%, rgba(53,98,125,1) 78%);
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+
+}
+
+@media (max-width:576px){
+  #logo-computer{
+    display: none;
+  }
+
+  body {
+    padding-top:80px;
+}
+header#menu-header{
+    height: 0px;
+}
+#poput-video{
+    height: 46vh;
+}
+img.img-juegos-video{
+    width: 100%;
+}
+
+#content-tipo-procesador{
+    display: flex;
+    flex-direction: column;
+}
+#content-processor-amd,#content-processor-intel{
+    width: 100%;
+}
+img#banners-img{
+    height: 300px;
+}
+#content-playstation-diferencias{
+    display: flex;
+    flex-direction: column;
+}
+
+#ps5-content, #ps4-content{
+    width: 100%;
+}
+#content-juegosps5{
+    display: flex;
+    flex-direction: column;
+}
+#content-border-ps5,#content-border-ps4{
+    width: 100%;
+}
+
+.menu_bar {
+            display: flex;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: #101F3F;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+}
+
+
+.menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu_bar span {
+    float: right;
+    color: #fff;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+header nav {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right:100%;
+    margin: 0;
+    overflow: scroll;
+    background: rgb(16,39,63);
+background: radial-gradient(circle, rgba(16,39,63,1) 25%, rgba(53,98,125,1) 78%);
+}
+
+header nav ul li {
+    display: block;
+    border-bottom:1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li a {
+    display: block;
+}
+
+header nav ul li:hover .children {
+    display: none;
+}
+
+header nav ul li .children {
+    width: 100%;
+    position: relative;
+}
+
+header nav ul li .children li a {
+    margin-left:20px;
+}
+
+header nav ul li .caret {
+    float: right;
+}
+}
+
+.loader {
+    width: 32px;
+    height: 90px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50% 50% 0 0;
+    border-bottom: 10px solid #FF3D00;
+    background-color: #FFF;
+    background-image: radial-gradient(ellipse at center, #FFF 34%, #FF3D00 35%, #FF3D00 54%, #FFF 55%), linear-gradient(#FF3D00 10px, transparent 0);
+    background-size: 28px 28px;
+    background-position: center 20px , center 2px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    animation: animloaderBack 1s linear infinite alternate;
+  }
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: 0px 15px #FF3D00 inset;
+    top: 67px;
+  }
+  .loader::after {
+    content: '';  
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 34px;
+    height: 34px;
+    top: 112%;
+    background: radial-gradient(ellipse at center, #ffdf00 8%, rgba(249, 62, 0, 0.6) 24%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50% 50% 0;
+    background-repeat: no-repeat;
+    background-position: -44px -44px;
+    background-size: 100px 100px;
+    box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite alternate;
+  }
+  
+  @keyframes animloaderBack {
+    0%, 30%, 70% {
+      transform: translateY(0px);
+    }
+    20%, 40%, 100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 4px 4px 12px 2px rgba(255, 61, 0, 0.75);
+      width: 34px;
+      height: 34px;
+      background-position: -44px -44px;
+      background-size: 100px 100px;
+    }
+    100% {
+      box-shadow: 2px 2px 8px 0px rgba(255, 61, 0, 0.5);
+      width: 30px;
+      height: 28px;
+      background-position: -36px -36px;
+      background-size: 80px 80px;
+    }
+  }
+
+
+ .loading-text{
+    color: #fff;
+    font-weight: bold;
+ }
