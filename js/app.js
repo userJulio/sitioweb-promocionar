@@ -8,6 +8,7 @@
 
   window.addEventListener("load", function() {
     const loadingdiv= document.querySelector(".content-spinner-carga");
+   
     setTimeout(() => {
       loadingdiv.classList.add("contetn-spinner-remover");
     }, 200);
@@ -123,7 +124,7 @@ mostrarData(page);
 }
 
 function mostrarData(page){
-    console.log("page",page);
+    console.log("page");
     //Conexion a mysql , solicitud http para traer data por pagina
 }
 
