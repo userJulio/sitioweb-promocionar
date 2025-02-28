@@ -21,7 +21,10 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+    width: 100% !important;
+    overflow-x: auto;
 }
+
 
 header.menu-header{
     width: 100%;
@@ -448,8 +451,8 @@ box-shadow: 12px 18px 20px 0px rgba(102,71,71,1);
     padding-left: 10px;
 }
 h6.title-price {
-    font-size: 18px;
-    color: #E07E10 !important;
+    font-size: 22px;
+    color: #eef2ee  !important;
     float: right;
     margin-right: 10px;
     font-weight: bold;
@@ -609,14 +612,16 @@ img.img-catalog{
     background: #fff;
     padding: 8px;
     border-radius: 50px;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
   }
   .pagination ul li{
     color: #000;
     list-style: none;
-    line-height: 45px;
+    line-height: 30px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     user-select: none;
@@ -624,10 +629,10 @@ img.img-catalog{
   }
   .pagination ul li.numb{
     list-style: none;
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
     margin: 0 3px;
-    line-height: 45px;
+    line-height: 30px;
     border-radius: 50%;
   }
   .pagination ul li.numb.first{
@@ -641,7 +646,7 @@ img.img-catalog{
     cursor: default;
   }
   .pagination ul li.btn{
-    padding: 0 20px;
+    padding: 0 2px;
     border-radius: 50px;
   }
   .pagination li.active,
@@ -862,6 +867,10 @@ input#search-option-marca{
   body {
     padding-top:80px;
 }
+#pagination{
+    width: 100%;
+}
+
 header#menu-header{
     height: 0px;
 }
