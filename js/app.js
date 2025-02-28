@@ -8,10 +8,8 @@
 
   window.addEventListener("load", function() {
     const loadingdiv= document.querySelector(".content-spinner-carga");
-   
-    setTimeout(() => {
-      loadingdiv.classList.add("contetn-spinner-remover");
-    }, 200);
+    loadingdiv.classList.add("contetn-spinner-remover");
+    
 
   });
 
