@@ -597,14 +597,17 @@ header nav ul li .caret {
 .logo-image {
     display: flex;
     align-items: center;
-    padding-left: 15px;
 }
 img.img-catalog{
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
 }
-
+img.logo-page {
+    object-fit: inherit;
+    width: 380px;
+    height: auto;
+}
 
 .pagination ul{
     width: 100%;
@@ -760,6 +763,10 @@ input#search-option-marca{
       body {
 		padding-top:80px;
 	}
+    .logo-page-menu{
+        width: 330px;
+        height: auto;
+    }
     img#banners-img{
         height: 380px;
     }
@@ -815,7 +822,7 @@ input#search-option-marca{
 	.menu_bar span {
         float: right;
         color: #fff;
-        font-size: 40px;
+        font-size: 35px;
         margin-right: 15px;
 	}
 
@@ -866,6 +873,10 @@ input#search-option-marca{
 
   body {
     padding-top:80px;
+}
+.logo-page-menu{
+    width: 290px;
+    height: auto;
 }
 #pagination{
     width: 100%;
@@ -932,7 +943,7 @@ img#banners-img{
 .menu_bar span {
     float: right;
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     margin-right: 15px;
 }
 
